@@ -1,0 +1,90 @@
+:root {
+    --inner-size: 1170px;
+    --gap-size: 30px;
+    --padding-size: 104px;
+
+    --primary-color: #D47676;
+    --w-color: #fff;
+
+    --line-color: #ddd;
+    --background-color: #f9f9f9;
+    --body-color: #222222;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    letter-spacing: -0.06rem;
+    color: var(--body-color);
+}
+
+
+.inner {
+    max-width: var(--inner-size);
+    margin: 0 auto;
+}
+
+.default {
+    padding: var(--padding-size) 0;
+}
+
+.default h2 {
+    font-size: 3.4rem;
+    line-height: 3.2rem;
+    font-weight: 700;
+}
+
+@media (max-width:768px) {
+    .default h2 {
+        font-size: 3rem;
+        line-height: 3.2rem;
+        font-weight: 700;
+    }
+}
+
+@media (max-width:500px) {
+    .default h2 {
+        font-size: 2.8rem;
+        line-height: 3rem;
+        font-weight: 700;
+    }
+}
+
+@media (max-width:480px) {
+    .default h2 {
+        font-size: 2.6rem;
+        line-height: 3rem;
+        font-weight: 700;
+    }
+}
+
+@media (max-width:480px) {
+    .default h2 {
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+        font-weight: 700;
+    }
+}
+
+.bg {
+    background: var(--background-color);
+}
+
+.fx {
+    display: flex;
+    gap: var(--gap-size);
+}
+
+.fx>* {
+    flex: 1;
+    min-width: 0;
+}
+
+@media (max-width:1170px) {
+    .inner {
+        margin: 0 15px;
+    }
+}
